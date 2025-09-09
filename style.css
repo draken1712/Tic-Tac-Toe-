@@ -1,0 +1,72 @@
+ 
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #D4EEFC;
+      font-family: Arial, sans-serif;
+    }
+    
+    h1 {
+        margin-bottom: 20px;
+        /* color: #063751; */
+        font-size: 40px;
+    }
+    
+    .board {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+        gap: 10px;
+    }
+    
+    .cell {
+    
+      width: 100px;
+      height: 100px;
+      background: #fff;
+      border: 1px solid #333;
+      font-size: 4rem;
+      font-weight: bold;
+      color: #031B29;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.2s;
+      border-radius: 20px;
+      background-color: #66C3F4;
+    
+    }
+
+    .cell:hover {
+      background:#66C3F4;
+    }
+
+    .winner {
+      margin-top: 20px;
+      font-size: 2rem;
+      color: green;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      background: #333;
+      color: white;
+      border-radius: 5px;
+      border-radius: 20px;
+      transition: background 0.3s;
+      
+    }
+
+    button:hover {
+      background: #555;
+    }
+  
